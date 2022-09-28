@@ -1,0 +1,318 @@
+html{
+    font-family:"open sans",sans-serif;
+    color: #446072;
+    background-color: rgb(233, 233, 233);
+}
+
+@font-face {
+    font-family:"Laila-Light",sans-serif;
+    src: url("../fonts/Laila-Light.ttf") format("truetype");
+}
+
+a{
+    transition:0.5s
+}
+
+p {
+    line-height: 2em;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left:25px;
+}
+
+
+#sidebar{
+    padding-top: 40px;
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    background-color: #006599;
+
+}
+
+#sidebar h1 {
+    color:whitesmoke ;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom:30px;
+}
+
+#sidebar a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#sidebar a:hover{
+    color: rgb(156, 156, 156);
+}
+
+#sidebar li {
+    padding: 20px;
+}
+
+.sidebar-container{
+    width: 200px;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20%;
+}
+
+/* conteúdo */
+
+.content{
+    position: absolute;
+    left: 300px;
+    width: calc(100% - 300px);
+}
+
+.content h1,h2{
+    color: #006599;
+    margin-bottom: 30px;
+
+}
+
+.content h1 { 
+    font-size: 48px;
+}
+
+.content h2 {
+    font-size: 35px;
+}
+
+section{
+    padding-left: 50px;
+}
+
+/* bem vindo */
+
+#bemvindo{
+    padding-left: 0;
+}
+
+.bemvindo-content{
+    padding-left: 50px;
+
+}
+
+#bemvindo .banner {
+    height: 500px;
+    background-image: url(../img/banner2.jpg);
+    position: center;
+    background-size: cover;
+}
+
+#bemvindo h1{
+    margin-top:70px;
+}
+
+#bemvindo::after , #sobre::after{
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 100px;
+}
+
+.mini-banner{
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/banner3.jpg);
+    background-position:center;
+    border-radius: 80px;
+    background-size: cover;
+    float: left;
+}
+
+
+.descricao{
+    position: absolute;
+    left: 370px;
+    padding-right: 30px;
+}
+
+.descricao p {
+    line-height: 2em;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left:25px;
+}
+
+/* sobre */
+
+#sobre {
+
+}
+
+#sobre .mini-banner{
+    float: right;
+    margin-right: 50px;
+    background-image: url("../img/banner4.jpg");
+
+}
+
+/* galeria  */
+
+.banner-galeria{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 200px;
+}
+
+#doce1 , #doce2 , #doce3 {
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+.doce1-imgs{
+   width: 18.8%;
+   margin-left: 0.5%;
+   margin-right: 0.5%;
+   border-radius: 20px;
+}
+
+#img1 {
+    background-image: url('../img/galeria1.jpg');
+    margin-left: 0;
+}
+
+
+#img2 {
+    background-image: url('../img/galeria2.jpg');
+}
+
+
+#img3 {
+    background-image: url('../img/galeria3.jpg');
+}
+
+#img4 {
+    background-image: url('../img/galeria4.jpg');
+}
+
+#img5  {
+    background-image: url('../img/galeria5.jpg');
+    margin-right: 0;
+}
+
+.doce2-imgs{
+    width: 32.1%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border-radius: 20px;
+}
+
+#img6 {
+    background-image: url('../img/galeria6.jpg');
+    margin-left: 0;
+}
+
+
+#img7 {
+    background-image: url('../img/galeria7.jpg');
+}
+
+
+#img8 {
+    background-image: url('../img/galeria8.jpg');
+    margin-left: 0;
+}
+
+.doce3-imgs{
+    width: 23.8%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border-radius: 20px;
+}
+
+#img9 {
+    background-image: url('../img/galeria9.jpg');
+    margin-left: 0;
+}
+
+
+#img10 {
+    background-image: url('../img/galeria10.jpg');
+}
+
+
+#img11 {
+    background-image: url('../img/galeria11.jpg');
+}
+
+#img12 {
+    background-image: url('../img/galeria12.jpg');
+    margin-left: 0;
+}
+
+/* contato */
+
+#contato {
+    width: 500px;
+
+}
+
+#contato input[type="text"] , #contato input[type="email"] , #contato textarea {
+    display: block;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-family: "open sans", "sans-serif";
+}
+
+#contato input[type="text"]:focus, #contato input[type="email"]:focus, #contato textarea:focus{
+    border-color: rgb(156, 156, 156);
+}
+
+#contato input[type="submit"]{
+    margin-left: 0;
+    font-size: 16px;
+    width: 100px;
+    color:#006599;
+    border-color: #a5a5a5;
+    border-radius: 20px;
+    
+}
+
+#contato input[type="reset"]{
+    margin-left: 0;
+    font-size: 16px;
+    width: 100px;
+    background: color #a5a5a5;
+    color: #006599;
+    border-color: #a5a5a5;
+    border-radius: 20px;
+}
+
+#contato textarea {
+    right:150px;
+}
+
+/* footer */
+
+footer {
+    height: 100px;
+    padding-top: 150px;
+    color: #006599;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Laila-Light';
+    font-size: 20px;
+}
+
+
